@@ -1,0 +1,86 @@
+@use '../../styles/core/_variables' as variables;
+
+header {
+    nav.navbar {
+        height: variables.$navbar-height;
+        position: relative;
+        display: flex;
+        padding-left: 16px;
+        padding-right: 16px;
+        align-items: center;
+
+        .navbar--brand {
+            height: variables.$navbar-height;
+            max-width: 48px;
+
+            @media (max-width: 768px) {
+                font-size: 32px;
+            }
+
+            svg {
+                height: 100%;
+                width: 100%;
+            }
+
+            svg:hover {
+                .svg-logo {
+                    fill: variables.$itv-athens-gray;
+                }
+            }
+        }
+
+        .user_account {
+            justify-self: right;
+            color: variables.$itv-black-charade;
+            display: inline-flex;
+            align-items: center;
+
+            &__text {
+                font-size: 14px;
+                height: 18px;
+
+                @media (max-width: 768px) {
+                    font-size: 10.5px;
+                }
+
+                letter-spacing: -0.5px;
+                white-space: nowrap;
+            }
+
+            &:hover {
+                color: variables.$itv-tropical-green;
+                cursor: default;
+
+                path {
+                    fill: variables.$itv-tropical-green;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    height: variables.$navbar-height !important;
+    min-height: variables.$navbar-height !important;
+    background-color: variables.$itv-black-charade;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    &--bottom {
+        height: 46px;
+        font-size: 12px;
+        color: variables.$itv-columbia-blue;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 4px;
+        padding-left: 32px;
+        padding-right: 32px;
+        text-align: center;
+        margin-top: auto;
+        background-color: variables.$itv-black-charade;
+    }
+}

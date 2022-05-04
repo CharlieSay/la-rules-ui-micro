@@ -1,0 +1,20 @@
+@use '../../../styles/core/_variables' as variables;
+
+.active-nav-path {
+    color: variables.$itv-hub-pink
+}
+
+.nav-path {
+    color: variables.$itv-java;
+    text-decoration: none;
+}
+
+.navbar {
+    justify-content: space-between;
+}
+
+.nav-bar{
+    justify-content: space-between;
+    width: 25%;
+    display: flex;
+}

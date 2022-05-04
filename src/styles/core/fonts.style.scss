@@ -1,0 +1,350 @@
+@use 'variables';
+
+@font-face {
+    font-display: swap;
+    font-family: ITV Reem;
+    src: url('../../../public/fonts/itv_reem_web-bold.eot');
+    src: url('../../../public/fonts/itv_reem_web-bold.eot?#iefix') format("embedded-opentype"), url(../../../public/fonts/itv_reem_web-bold.woff) format("woff"), url(../../../public/fonts/itv_reem_web-bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: ITV Reem;
+    src: url('../../../public/fonts/itv_reem_web-bolditalic.eot');
+    src: url(../../../public/fonts/itv_reem_web-bolditalic.eot?#iefix) format("embedded-opentype"), url(../../../public/fonts/itv_reem_web-bolditalic.woff) format("woff"), url(../../../public/fonts/itv_reem_web-bolditalic.ttf) format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: ITV Reem;
+    src: url(../../../public/fonts/itv_reem_web-medium.eot);
+    src: url(../../../public/fonts/itv_reem_web-medium.eot?#iefix) format("embedded-opentype"), url(../../../public/fonts/itv_reem_web-medium.woff) format("woff"), url(../../../public/fonts/itv_reem_web-medium.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: ITV Reem;
+    src: url(../../../public/fonts/itv_reem_web-mediumitalic.eot);
+    src: url(../../../public/fonts/itv_reem_web-mediumitalic.eot?#iefix) format("embedded-opentype"), url(../../../public/fonts/itv_reem_web-mediumitalic.woff) format("woff"), url(../../../public/fonts/itv_reem_web-mediumitalic.ttf) format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: ITV Reem;
+    src: url(../../../public/fonts/itv_reem_web-regular.eot);
+    src: url(../../../public/fonts/itv_reem_web-regular.eot?#iefix) format("embedded-opentype"), url(../../../public/fonts/itv_reem_web-regular.woff) format("woff"), url(../../../public/fonts/itv_reem_web-regular.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: ITV Reem;
+    src: url(../../../public/fonts/itv_reem_web-italic.eot);
+    src: url(../../../public/fonts/itv_reem_web-italic.eot?#iefix) format("embedded-opentype"), url(../../../public/fonts/itv_reem_web-italic.woff) format("woff"), url(../../../public/fonts/itv_reem_web-italic.ttf) format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: ITV Reem;
+    src: url(../../../public/fonts/itv_reem_web-light.eot);
+    src: url(../../../public/fonts/itv_reem_web-light.eot?#iefix) format("embedded-opentype"), url(../../../public/fonts/itv_reem_web-light.woff) format("woff"), url(../../../public/fonts/itv_reem_web-light.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: ITV Reem;
+    src: url(../../../public/fonts/itv_reem_web-lightitalic.eot);
+    src: url(../../../public/fonts/itv_reem_web-lightitalic.eot?#iefix) format("embedded-opentype"), url(../../../public/fonts/itv_reem_web-lightitalic.woff) format("woff"), url(../../../public/fonts/itv_reem_web-lightitalic.ttf) format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.heading--underline {
+    padding-bottom: 24px;
+}
+
+.heading--underline:after {
+    background: variables.$itv-sea-green;
+    bottom: 0;
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    width: 60px;
+}
+
+.sub-text {
+    color: variables.$itv-black-charade;
+    font-size: 12px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text-light {
+    color: variables.$itv-white;
+}
+
+.text-10 {
+    font-size: 10px;
+}
+
+.text-11 {
+    font-size: 11px;
+}
+
+.text-12 {
+    font-size: 12px;
+}
+
+.text-13 {
+    font-size: 13px;
+}
+
+.text-14 {
+    font-size: 14px;
+}
+
+.text-16 {
+    font-size: 16px;
+}
+
+.text-18 {
+    font-size: 18px;
+}
+
+.text-20 {
+    font-size: 20px;
+}
+
+.text-22 {
+    font-size: 22px;
+}
+
+.text-24 {
+    font-size: 24px;
+}
+
+.line-height-16 {
+    line-height: 16px;
+}
+
+.line-height-18 {
+    line-height: 18px;
+}
+
+.line-height-20 {
+    line-height: 20px;
+}
+
+.line-height-22 {
+    line-height: 22px;
+}
+
+.line-height-24 {
+    line-height: 24px;
+}
+
+.line-height-28 {
+    line-height: 28px;
+}
+
+.line-height-32 {
+    line-height: 32px;
+}
+
+.h4 {
+    font-size: 16px;
+}
+
+.text-primary {
+    color: variables.$itv-black-charade;
+}
+
+.h4.gray {
+    color: variables.$itv-cool-gray;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis !important;
+}
+
+.itv-status-tag {
+    background-color: variables.$itv-iron-gray;
+    border: 1px solid variables.$itv-iron-gray;
+    color: variables.$itv-dark-gray;
+    font-size: 11px;
+    border-radius: 0;
+    font-weight: 400;
+
+    .anticon-close {
+        color: variables.$itv-dark-gray;
+    }
+
+    .bold {
+        font-weight: 700;
+        font-size: 10px;
+    }
+}
+
+.itv-label {
+    .ant-tag-close-icon {
+        color: variables.$itv-athens-gray;
+        margin-left: 8px;
+        vertical-align: 0px;
+        font-size: 8px;
+    }
+
+    padding: 4px !important;
+    padding-top: 5px !important;
+    text-transform: uppercase;
+    font-size: 14px !important;
+    line-height: 16px !important;
+    font-weight: 500 !important;
+    color: #fff !important;
+    border-radius: 0 !important;
+    background-color: variables.$itv-fandango !important;
+    border: 0 solid variables.$itv-fandango !important;
+
+    &.text-12 {
+        font-size: 12px !important;
+    }
+
+    &:hover {
+        background-color: #901345 !important;
+        color: variables.$itv-athens-gray !important;
+    }
+
+    &.gray {
+        background-color: variables.$itv-deep-gray !important;
+
+        &:hover {
+            background-color: variables.$itv-dark-gray !important;
+        }
+    }
+
+    &.green {
+        background-color: variables.$itv-sea-green !important;
+
+        &:hover {
+            background-color: variables.$itv-tropical-green !important;
+        }
+    }
+}
+
+.itv-label-green {
+    padding: 4px;
+    color: #fff;
+    border-radius: 0;
+    line-height: 13px;
+    height: 18px;
+    background-color: variables.$itv-sea-green;
+    border: 0 solid transparent;
+
+    &:hover {
+        background-color: variables.$itv-tropical-green !important;
+    }
+}
+
+.itv-badge {
+    color: variables.$itv-white;
+    background-color: variables.$itv-tropical-green;
+    border: 2px solid variables.$itv-tropical-green;
+    padding: 0px 12px 0px;
+    text-align: center;
+    border-radius: 40px;
+    display: inline-block;
+    font-size: 14px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.itv-badge-outline {
+    height: 24px;
+    color: variables.$itv-tropical-green;
+    background-color: variables.$itv-white;
+    border: 1px solid transparentize(variables.$itv-tropical-green, 0.5);
+    padding: 1px 12px 0px;
+    text-align: center;
+    border-radius: 40px;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.itv-action-button {
+    padding: 3px;
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    line-height: 1;
+    max-width: 24px;
+    max-height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background: variables.$itv-tropical-green;
+    color: variables.$itv-white;
+
+    &.outlined {
+        color: variables.$itv-tropical-green;
+        border: 1px solid transparentize(variables.$itv-tropical-green, 0.5);
+        background-color: variables.$itv-white;
+    }
+
+    .anticon {
+        width: 16px;
+        height: 100%;
+        display: flex;
+        margin: auto;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.text-disabled {
+    opacity: 0.7;
+}
+
+.whitespace-nowrap {
+    white-space: nowrap;
+}

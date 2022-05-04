@@ -1,0 +1,153 @@
+@use "variables";
+
+$font-family: ITV Reem, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
+    sans-serif;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html[type="button"],
+[type="reset"],
+[type="submit"],
+[type="button"],
+[role="button"] {
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+figcaption,
+figure {
+    display: block;
+}
+
+button,
+input,
+select,
+textarea {
+    line-height: variables.$default-lineheight;
+    margin: 0;
+}
+
+address,
+dl,
+ol,
+ul {
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+html {
+    --antd-wave-shadow-color: #00000000 !important;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    line-height: variables.$default-lineheight;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior-y: none;
+    height: -webkit-fill-available;
+}
+
+body {
+    font-family: $font-family;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: variables.$default-lineheight;
+    color: variables.$itv-black-charade;
+    margin: 0;
+    min-height: -webkit-fill-available;
+    background-color: variables.$itv-athens-gray;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overscroll-behavior-y: none;
+}
+
+section.root-layout {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    min-height: 100vh;
+    height: -webkit-fill-available;
+    box-sizing: border-box;
+}
+
+.content-restriction {
+    display: block;
+    position: relative;
+    margin: 0 auto 72px;
+    padding: 0 80px 0 80px;
+    max-width: 1400px;
+}
+
+.header-restriction {
+    display: block;
+    position: relative;
+    margin: 0 auto 0;
+    padding: 0 80px 0 80px;
+    max-width: 1400px;
+}
+
+main {
+    flex: auto;
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.container {
+    border-radius: 12px;
+    padding: 16px 0;
+    max-width: 95vw;
+    background-color: variables.$itv-athens-gray;
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 100vw;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100vw;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 100vw;
+    }
+}
+
+.container__transparent {
+    background-color: transparent !important;
+}
+
+a:focus-visible,
+.ant-btn:focus-visible {
+    outline: 2px solid variables.$itv-tropical-green !important;
+}
