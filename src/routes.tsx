@@ -1,13 +1,9 @@
 import authenticatedRoutes from "./data/routesConfig";
 import { Redirect, Route, Switch } from "react-router-dom";
-import { Login } from "./pages";
 
 const Routes = () => {
   return (
     <Switch>
-      <Route exact path="/login">
-        <Login />
-      </Route>
       {authenticatedRoutes.map((route) => (
         <Route
           exact

@@ -1,7 +1,7 @@
-@use '../../../styles/core/_variables' as variables;
+@use "../../../styles/core/_variables" as variables;
 
 .active-nav-path {
-    color: variables.$itv-hub-pink
+    color: variables.$itv-hub-pink;
 }
 
 .nav-path {
@@ -13,8 +13,19 @@
     justify-content: space-between;
 }
 
-.nav-bar{
+.nav-bar {
     justify-content: space-between;
     width: 25%;
     display: flex;
+}
+
+.account {
+    display: flex;
+
+    img {
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        margin: 8px;
+    }
 }
