@@ -16,7 +16,7 @@ const NavBar = () => {
           }`}
         >
           {`${route.name} ${
-            location?.pathname === route.path ? "active-nav-path" : ""
+            location?.pathname === route.path ? "(ACTIVE)" : ""
           }`}
         </Link>
       ))}

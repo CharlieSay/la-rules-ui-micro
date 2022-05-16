@@ -1,22 +1,24 @@
 import authenticatedRoutes from "./data/routesConfig";
 import { Redirect, Route, Switch } from "react-router-dom";
+import Layout from "./components/layout/layout";
 
 const Routes = () => {
   return (
-    <Switch>
-      {authenticatedRoutes.map((route) => (
-        <Route
-          exact
-          path={route.path}
-          key={route.path}
-          component={route.component}
-        />
-      ))}
+    <Layout title={"Home"}>
+      <Switch>
+        {authenticatedRoutes.map((route) => (
+          <Route
+            path={route.path}
+            key={route.path}
+            component={route.component}
+          />
+        ))}
 
-      <Route exact path="*">
+        {/* <Route path="*">
         <Redirect to="/login" />
-      </Route>
-    </Switch>
+      </Route> */}
+      </Switch>
+    </Layout>
   );
 };
 
